@@ -357,6 +357,21 @@ header nav ul li a{
     font-size: 22px;
   }
 }
+
+@media only screen and (min-width: 1350px) {
+  .header-top {padding: 61px 0 0 77px;}
+  .header-top h1 {
+    margin-bottom: 20px;
+}
+  .header-top h1 a
+  {
+    font-size: 50px;
+  }
+  .header-top p
+  {
+    font-size: 22px;
+  }
+}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 }
