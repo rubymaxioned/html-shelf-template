@@ -224,18 +224,30 @@ li {
 =================================*/
 header {
   position: relative;
-  background-image: url(https://via.placeholder.com/1080x480.png?);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-header .wrapper {width: 100%;}
+
+.header-top {
+  position: absolute;
+  top: 5px;
+}
+
+header img {
+  min-height: 200px;
+  max-height: 480px;
+}
+
+header .wrapper {
+  width: 100%;
+}
+
 .header-top h1 {
   text-transform: uppercase;
 }
+
 .header-top p {
   text-transform: capitalize;
 }
+
 header nav {
   position: absolute;
   bottom: 10px;
@@ -244,21 +256,26 @@ header nav {
   background-color: rgb(26, 35, 46);
   opacity: 0.5;
 }
+
 header nav ul li {
   display: block;
   text-transform: capitalize;
   margin: 1%;
   text-align: center;
 }
+
 header nav ul li a {
   color: #fff;
 }
+
 .header-top {
   padding: 5%;
 }
+
 .header-top h1 {
   margin-bottom: 2%;
 }
+
 .header-top h1 a {
   color: #fff;
   font-weight: 500;
@@ -267,6 +284,7 @@ header nav ul li a {
   line-height: 1.5;
   font-size: 20px;
 }
+
 .header-top p {
   color: #fff;
   font-size: 13px;
@@ -283,20 +301,24 @@ header nav ul li a {
   padding: 40px 0 30px 0;
   background-color: rgb(255, 255, 255);
 }
+
 .bookstore p,
 .bookstore h2 {
   color: rgb(114, 112, 117);
 }
+
 .bookstore h2 {
   margin-bottom: 10px;
   font-size: 19px;
 }
+
 .bookstore p {
   margin-bottom: 30px;
   line-height: 25px;
   font-size: 15px;
   text-align: justify;
 }
+
 .bookstore h3::first-letter {
   text-transform: uppercase;
 }
@@ -307,11 +329,12 @@ header nav ul li a {
   color: rgb(114, 112, 117);
   margin: 10px 0;
 }
+
 .image-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
+
 .image-list li {
   margin-bottom: 20px;
 }
@@ -319,8 +342,9 @@ header nav ul li a {
 .page-list {
   text-align: center;
 }
+
 .page-list li {
-  padding: 5px 5%;
+  padding: 2% 2%;
   background-color: rgb(8, 101, 153);
 }
 .page-list li a {
@@ -331,25 +355,30 @@ header nav ul li a {
 .need-help-content {
   padding: 10%;
 }
+
 .need-help-content h2 {
   color: hsl(98, 67%, 98%);
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 .need-help .wrapper {
   background-color: rgb(8, 101, 153);
 }
+
 .need-help-content p {
   color: rgb(220, 238, 228);
   font-size: 14px;
   text-align: justify;
   margin-bottom: 10px;
 }
+
 .need-help-content a {
   border: 1px solid #fff;
   padding: 7px 5%;
   color: rgb(220, 238, 228);
 }
+
 /*=================================
   main styling ends here
 =================================*/
@@ -375,26 +404,12 @@ footer p {
     padding: 5%;
     gap: 5%;
   }
+
   .need-help figure {
     width: 30%;
   }
-  .need-help-content {
-    width: 70%;
-  }
 
-  .need-help-content h2 {
-    color: rgb(248, 253, 245);
-    font-size: 20px;
-  }
-  .need-help .wrapper {
-    background-color: rgb(8, 101, 153);
-  }
-  .need-help-content p {
-    color: rgb(220, 238, 228);
-    font-size: 12px;
-  }
-  .need-help-content 
-  {
+  .need-help-content {
     padding: 0;
   }
 }
@@ -403,27 +418,57 @@ footer p {
   header nav ul {
     display: flex;
   }
+
   header nav ul li {
     flex-grow: 1;
   }
+
   header nav ul li a {
     justify-content: center;
     width: 100%;
     text-align: center;
   }
+
   .header-top h1 a {
     font-size: 30px;
   }
+
   .header-top p {
     font-size: 15px;
   }
+
   .image-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
+
   .image-list li {
     margin: 1%;
     justify-content: center;
+  }
+
+  .need-help-content {
+    width: 70%;
+  }
+
+  .need-help-content h2 {
+    color: rgb(248, 253, 245);
+    font-size: 20px;
+  }
+
+  .need-help .wrapper {
+    background-color: rgb(8, 101, 153);
+    gap: 10%;
+  }
+
+  .need-help-content p {
+    color: rgb(220, 238, 228);
+    font-size: 12px;
+  }
+
+  .need-help-content {
+    padding: 0;
   }
 }
 
@@ -431,11 +476,27 @@ footer p {
   .header-top h1 a {
     font-size: 40px;
   }
+
   .header-top p {
     font-size: 17px;
   }
+
   header nav ul li a {
     font-size: 17px;
+  }
+
+  .need-help-content h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .need-help-content p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .need-help .wrapper {
+    gap: 10%;
   }
 }
 
@@ -446,8 +507,13 @@ footer p {
   .header-top h1 a {
     font-size: 50px;
   }
+
   .header-top p {
     font-size: 22px;
+  }
+  .image-list li {
+    justify-content: center;
+    flex-basis: 21%;
   }
 }
 
@@ -455,15 +521,19 @@ footer p {
   .header-top {
     padding: 61px 0 0 77px;
   }
+
   .header-top h1 {
     margin-bottom: 20px;
   }
+
   .header-top h1 a {
     font-size: 50px;
   }
+
   .header-top p {
     font-size: 22px;
   }
+
   header nav ul li a {
     font-size: 20px;
   }
