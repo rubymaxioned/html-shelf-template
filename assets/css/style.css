@@ -354,16 +354,25 @@ header nav ul li a {
 /*need help section*/
 .need-help .wrapper {
   background-color: #096599;
+}
+
+.need-help-box {
   padding: 5%;
 }
 
+.need-help-content {
+  padding: 5%;
+}
 .need-help-content h2 {
   color: #F9FFFC;
   text-transform: capitalize;
+  padding-bottom: 10px;
 }
 
 .need-help-content p {
   color: #D9E2D6;
+  padding-bottom: 15px;
+  text-align: justify;
 }
 
 .need-help-content p::first-letter {
@@ -373,34 +382,8 @@ header nav ul li a {
   text-transform: capitalize;
   color: #D9E2D6;
   border: 1px solid #D9E2D6;
-  padding: 2%;
+  padding: 3% 6%;
 }
-/* .need-help-content {
-  padding: 10%;
-}
-
-.need-help-content h2 {
-  color: hsl(98, 67%, 98%);
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.need-help .wrapper {
-  background-color: rgb(8, 101, 153);
-}
-
-.need-help-content p {
-  color: rgb(220, 238, 228);
-  font-size: 14px;
-  text-align: justify;
-  margin-bottom: 10px;
-}
-
-.need-help-content a {
-  border: 1px solid #fff;
-  padding: 7px 5%;
-  color: rgb(220, 238, 228);
-} */
 
 /*=================================
   main styling ends here
@@ -421,20 +404,7 @@ footer p {
 
 /*media query starts*/
 @media only screen and (min-width: 480px) {
-  /* .need-help .wrapper {
-    background-color: rgb(8, 101, 153);
-    display: flex;
-    padding: 5%;
-    gap: 5%;
-  }
-
-  .need-help figure {
-    width: 30%;
-  }
-
-  .need-help-content {
-    padding: 0;
-  } */
+  
 }
 
 @media only screen and (min-width: 540px) {
@@ -471,28 +441,19 @@ footer p {
     justify-content: center;
   }
 
-  /* .need-help-content {
-    width: 70%;
-  }
+  .need-help-box figure {flex-basis: 20%;}
 
-  .need-help-content h2 {
-    color: rgb(248, 253, 245);
-    font-size: 20px;
-  }
-
-  .need-help .wrapper {
-    background-color: rgb(8, 101, 153);
-    gap: 10%;
-  }
-
-  .need-help-content p {
-    color: rgb(220, 238, 228);
-    font-size: 12px;
+  .need-help-box
+  {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .need-help-content {
+    flex-basis: 60%;
     padding: 0;
-  } */
+  }
+  
 }
 
 @media only screen and (min-width: 768px) {
