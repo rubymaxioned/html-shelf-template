@@ -222,10 +222,11 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper{
-  position: relative;
-}
+header .wrapper {
+  width: 100%;
+   position: relative;
 
+}
 .header-top {
   position: absolute;
   top: 5px;
@@ -234,10 +235,6 @@ header .wrapper{
 header img {
   min-height: 200px;
   max-height: 480px;
-}
-
-header .wrapper {
-  width: 100%;
 }
 
 .header-top h1 {
@@ -367,6 +364,12 @@ header nav ul li a {
   color: #F9FFFC;
   text-transform: capitalize;
   padding-bottom: 10px;
+  padding: 5%;
+}
+
+.need-help-content h2 {
+  color: #F9FFFC;
+  text-transform: capitalize;
 }
 
 .need-help-content p {
