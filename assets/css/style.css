@@ -222,7 +222,7 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header {
+header .wrapper{
   position: relative;
 }
 
@@ -352,7 +352,30 @@ header nav ul li a {
 }
 
 /*need help section*/
-.need-help-content {
+.need-help .wrapper {
+  background-color: #096599;
+  padding: 5%;
+}
+
+.need-help-content h2 {
+  color: #F9FFFC;
+  text-transform: capitalize;
+}
+
+.need-help-content p {
+  color: #D9E2D6;
+}
+
+.need-help-content p::first-letter {
+  text-transform: uppercase;
+}
+.need-help-content a {
+  text-transform: capitalize;
+  color: #D9E2D6;
+  border: 1px solid #D9E2D6;
+  padding: 2%;
+}
+/* .need-help-content {
   padding: 10%;
 }
 
@@ -377,7 +400,7 @@ header nav ul li a {
   border: 1px solid #fff;
   padding: 7px 5%;
   color: rgb(220, 238, 228);
-}
+} */
 
 /*=================================
   main styling ends here
@@ -398,7 +421,7 @@ footer p {
 
 /*media query starts*/
 @media only screen and (min-width: 480px) {
-  .need-help .wrapper {
+  /* .need-help .wrapper {
     background-color: rgb(8, 101, 153);
     display: flex;
     padding: 5%;
@@ -411,7 +434,7 @@ footer p {
 
   .need-help-content {
     padding: 0;
-  }
+  } */
 }
 
 @media only screen and (min-width: 540px) {
@@ -448,7 +471,7 @@ footer p {
     justify-content: center;
   }
 
-  .need-help-content {
+  /* .need-help-content {
     width: 70%;
   }
 
@@ -469,7 +492,7 @@ footer p {
 
   .need-help-content {
     padding: 0;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -485,7 +508,7 @@ footer p {
     font-size: 17px;
   }
 
-  .need-help-content h2 {
+  /* .need-help-content h2 {
     font-size: 25px;
     margin-bottom: 15px;
   }
@@ -497,7 +520,7 @@ footer p {
 
   .need-help .wrapper {
     gap: 10%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 995px) {
