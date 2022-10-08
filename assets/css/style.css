@@ -225,8 +225,8 @@ li {
 header .wrapper {
   width: 100%;
    position: relative;
-
 }
+
 .header-top {
   position: absolute;
   top: 5px;
@@ -266,13 +266,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {color: rgb(31,101,178)}
-.header-top {
-  padding: 5%;
-}
-
-.header-top h1 {
-  margin-bottom: 2%;
-}
+.header-top { padding: 5%;}
+.header-top h1 { margin-bottom: 2%;}
 
 .header-top h1 a {
   color: #fff;
@@ -280,12 +275,12 @@ header nav ul li a:hover {color: rgb(31,101,178)}
   letter-spacing: 1.5;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-size: 23px;
+  font-size: 30px;
 }
 
 .header-top p {
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /*=================================
@@ -310,6 +305,8 @@ header nav ul li a:hover {color: rgb(31,101,178)}
   font-size: 19px;
 }
 
+.bookstore h2::first-letter {text-transform: uppercase;}
+
 .bookstore p {
   margin-bottom: 30px;
   line-height: 25px;
@@ -317,15 +314,13 @@ header nav ul li a:hover {color: rgb(31,101,178)}
   text-align: justify;
 }
 
-.bookstore h3::first-letter {
-  text-transform: uppercase;
-}
+.bookstore h3::first-letter { text-transform: uppercase;}
 
 .bookstore h3 {
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(114, 112, 117);
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .image-list {
@@ -338,55 +333,52 @@ header nav ul li a:hover {color: rgb(31,101,178)}
 }
 
 .page-list {
-  text-align: center;
+  display: flex;
+    justify-content: center;
+    gap: 1%;
 }
 
 .page-list li {
-  padding: 2% 2%;
+  padding: 1.5% 2%;
   background-color: rgb(8, 101, 153);
 }
-.page-list li a {
-  color: rgb(230, 224, 216);
-}
+
+.page-list li a { color: rgb(230, 224, 216);}
 
 /*need help section*/
-.need-help .wrapper {
-  background-color: #096599;
-}
+.need-help .wrapper { background-color: #096599;}
 
-.need-help-box {
-  padding: 5%;
-}
+.need-help-box { padding: 5%;}
 
-.need-help-content {
-  padding: 5%;
-}
+.need-help-content { padding: 7%;}
+
 .need-help-content h2 {
   color: #F9FFFC;
   text-transform: capitalize;
   padding-bottom: 10px;
-  padding: 5%;
-}
-
-.need-help-content h2 {
-  color: #F9FFFC;
-  text-transform: capitalize;
+  font-size: 20px;
 }
 
 .need-help-content p {
   color: #D9E2D6;
   padding-bottom: 15px;
   text-align: justify;
+  font-size: 13px;
+    line-height: 1.5;
 }
 
-.need-help-content p::first-letter {
-  text-transform: uppercase;
-}
+.need-help-content p::first-letter { text-transform: uppercase;}
+
 .need-help-content a {
   text-transform: capitalize;
   color: #D9E2D6;
   border: 1px solid #D9E2D6;
   padding: 3% 6%;
+}
+
+.need-help-content a:hover { 
+  color: rgb(9,101,153);
+  background-color: #fff;
 }
 
 /*=================================
@@ -396,16 +388,14 @@ header nav ul li a:hover {color: rgb(31,101,178)}
 /*=================================
   footer styling starts here
 =================================*/
-footer .wrapper
-{
-  background-color: #333333;
-}
+footer .wrapper { background-color: #333333;}
+
 footer p {
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 10px;
   text-align: center;
   color: #EDEDED;
-  padding: 3%;
+  padding: 20px;
 }
 /*=================================
   footer styling ends here
@@ -417,13 +407,10 @@ footer p {
 }
 
 @media only screen and (min-width: 540px) {
-  header nav ul {
-    display: flex;
-  }
 
-  header nav ul li {
-    flex-grow: 1;
-  }
+  header nav ul { display: flex;}
+
+  header nav ul li { flex-grow: 1;}
 
   header nav ul li a {
     justify-content: center;
@@ -431,13 +418,8 @@ footer p {
     text-align: center;
   }
 
-  .header-top h1 a {
-    font-size: 30px;
-  }
-
-  .header-top p {
-    font-size: 15px;
-  }
+  .header-top h1 a { font-size: 30px;}
+  .header-top p { font-size: 15px;}
 
   .image-list {
     flex-direction: row;
@@ -445,10 +427,7 @@ footer p {
     justify-content: space-between;
   }
 
-  .image-list li {
-    flex-basis: 22%;
-  }
-
+  .image-list li { flex-basis: 45%;}
   .need-help-box figure {flex-basis: 20%;}
 
   .need-help-box
@@ -465,17 +444,14 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
-  .header-top h1 a {
-    font-size: 40px;
-  }
 
-  .header-top p {
-    font-size: 17px;
-  }
+  .header-top h1 a { font-size: 40px; }
+  .header-top p { font-size: 17px;}
+  header nav ul li a { font-size: 17px;}
+  .image-list li { flex-basis: 23%;}
+  .need-help-content p {font-size: 15px;}
+  footer p {font-size: 14px;}
 
-  header nav ul li a {
-    font-size: 17px;
-  }
 }
 
 @media only screen and (min-width: 995px) {
@@ -483,13 +459,9 @@ footer p {
 
 @media only screen and (min-width: 1024px) {
   
-  .header-top h1 a {
-    font-size: 50px;
-  }
+  .header-top h1 a { font-size: 50px;}
+  .header-top p { font-size: 22px;}
 
-  .header-top p {
-    font-size: 22px;
-  }
   .image-list li {
     justify-content: center;
     flex-basis: 21%;
@@ -497,6 +469,7 @@ footer p {
 }
 
 @media only screen and (min-width: 1220px) {
+  
   .header-top {
     top: 59px;
     left: 6%;
@@ -504,21 +477,54 @@ footer p {
   }
 
   header nav {padding: 5px 0;}
-  .header-top h1 {
-    margin-bottom: 13px;
+  .header-top h1 { margin-bottom: 13px;}
+  .header-top h1 a {font-size: 53px;}
+  .header-top p { font-size: 25px;}
+  header nav ul li a {font-size: 21px;}
+  .bookstore {padding: 95px 0px 80px;} 
+  .bookstore h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
   }
 
-  .header-top h1 a {
-    font-size: 53px;
+  .bookstore h3 {
+    font-size: 18px;
+    margin: 25px 0;
   }
 
-  .header-top p {
-    font-size: 25px;
+  .bookstore p {
+    font-size: 20px;
+    margin-bottom: 74px;
   }
 
-  header nav ul li a {
-    font-size: 21px;
+  .image-list li {
+    margin-bottom: 30px;
+    flex-basis: 23%;
   }
+
+  .page-list {padding-top: 35px;}
+  .need-help-content { flex-basis: 65%;}
+
+  .need-help-content h2 {
+    font-size: 33px;
+    padding-bottom: 12px;
+  }
+
+  .need-help-content p 
+  {
+    font-size: 18px;
+    line-height: 1.7;
+    padding-bottom: 30px;
+  }
+
+  .need-help-content a 
+  {
+    padding: 2% 6%;
+    font-size: 18px;
+  }
+
+  footer {margin-top: 75px;}
+  footer p {font-size: 19px;}
 }
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
