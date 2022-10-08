@@ -476,20 +476,6 @@ footer p {
   header nav ul li a {
     font-size: 17px;
   }
-
-  /* .need-help-content h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
-  }
-
-  .need-help-content p {
-    font-size: 15px;
-    margin-bottom: 25px;
-  }
-
-  .need-help .wrapper {
-    gap: 10%;
-  } */
 }
 
 @media only screen and (min-width: 995px) {
