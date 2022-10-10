@@ -232,6 +232,10 @@ header .wrapper {
   top: 5px;
 }
 
+.header-top h1 a:hover {color: #096599;}
+
+nav ul li .active {color: #096599;}
+
 header img {
   min-height: 300px;
   max-height: 480px;
@@ -340,10 +344,20 @@ header nav ul li a:hover {color: rgb(31,101,178)}
 
 .page-list li {
   padding: 1.5% 2%;
+  background-color: rgb(237,237,237);
+}
+
+.page-list .active-li {
+  color: #fff;
   background-color: rgb(8, 101, 153);
 }
 
-.page-list li a { color: rgb(230, 224, 216);}
+.page-list .active-li a {color: #fff;}
+
+.page-list li a { 
+  color: rgb(230, 224, 216);
+  color: #333333;
+}
 
 /*need help section*/
 .need-help .wrapper { background-color: #096599;}
